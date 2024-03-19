@@ -1048,3 +1048,25 @@ button {
     margin-top: 90px;
 }
 
+
+
+
+/* new */
+.logo-img {
+    width: 80px; 
+    height: auto; 
+  }
+  .header_bg{
+  background-color:pink;
+  }
+  header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, blue, pink); /* Gradient from white to blue */
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
