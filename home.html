@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Skill hire</title>
+      <title>Home</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -33,7 +33,25 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
+   <style>
+      .whatsapp_button{
+         position:fixed;
+         bottom:20px;
+         right:20px;
+         z-index:9999;
+      }
+      whatsapp_button img{
+         width:60px;
+      }
+   </style>
+
+      
    <body>
+      <div class="whatsapp_button">
+         <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER_HERE" target="_blank">
+            <img src="images/whatsapp-icon.png" alt="WhatsApp Icon">
+         </a>
+      </div>
       <!--header section start -->
       <div class="header_section">
          <div class="header_bg">
@@ -46,7 +64,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                           <a class="nav-link" href="index.html">Home</a>
+                           <a class="nav-link" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="about.html">About</a>
