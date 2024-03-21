@@ -12,62 +12,64 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .header_banner {
-            background: linear-gradient(45deg, blue, purple); /* Purple to pink gradient */
-            color: #fff;
-            text-align: center;
-            padding: 70px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow with color */
-            position:relative;
+        /* Custom styles here */
+        .country-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 20px;
         }
 
-        .header_banner h1 {
-            font-size: 30px;
-            margin-bottom: 20px;
+        .country {
+            flex: 0 0 calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
 
-        .header_banner p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            position: absolute;
-            left: 50%;
-            top:50%;
-            transform: translate(-50%, -50%) rotate(0deg); /* Initial rotation */
-            white-space: nowrap; /* Prevent text from wrapping */
-            overflow: hidden; /* Hide overflowing text */
-            animation: rotateIn 10s linear infinite;
+        .country:hover {
+            transform: translateY(-5px);
         }
-        carousel-control-next-icon{
-            animation:move RightArrow is infinite;
+
+        .country img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
-        @keyframes rotateIn {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
+
+        .country-content {
+            padding: 15px;
+        }
+
+        .country h3 {
+            margin-top: 0;
+        }
+
+        .country p {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 992px) {
+            .country {
+                flex: 0 0 calc(50% - 20px);
+                max-width: calc(50% - 20px);
             }
-            50% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-            100% {
-                transform: translate(-50%, -50%) rotate(0deg);
-            }
-        }
-        .carousel-item img {
-            max-height: 500px; /* Adjust the max height of the carousel items */
-            margin: 0 auto; /* Center the image horizontally */
-        }
-        
-
-        .carousel-caption h5 {
-            font-size: 24px;
-            margin-bottom: 5px;
         }
 
-        .carousel-caption p {
-            font-size: 16px;
+        @media (max-width: 768px) {
+            .country {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
+    
     <!-- Header Banner -->
     <header>
         <div class="container header-content">
@@ -113,68 +115,61 @@
             </nav>
         </div>
     </header>
-    <section class="header_banner">
-        <div class="container">
-            <h1>Study abroad</h1>
-            
-            
-        </div>
-    </section>
-
-    <!-- Study Abroad Carousel Section -->
-    <section id="study_abroad_carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/images/gallery/uk.jpg" class="d-block w-100" alt="Country 1 Flag">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                    <p></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="/images/gallery/canada.jpg" class="d-block w-100" alt="Country 2 Flag">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Country Name 2</h5>
-                    <p>Description of the study abroad opportunities in Country Name 2</p>
-                </div>
-            </div>
-            <!-- Add more carousel items as needed -->
-        </div>
-        <a class="carousel-control-prev" href="#study_abroad_carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#study_abroad_carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </section>
-
-    <!-- Study Abroad Places Section -->
+    <div class="heading image-class" style="background-image: url('images\flight.jpeg'); background-size:100%, 100%;">
     <section class="places_section layout_padding">
         <div class="container">
-            <h2 class="section_title">Study Abroad Places</h2>
-            <!-- Remove existing place boxes here -->
+            <h2 class="section_title"></h2>
+            <div class="country-box">
+                <div class="country">
+                    <img src="images\Canada.jpeg" alt="Country 1">
+                    <div class="country-content">
+                        <h3>Canada</h3>
+                        <p>Canada is a country in North America with 10 provinces. Canada is currently one of the top choices of students from India for overseas education. The reason international students prefer Canada is the world class education provided by the universities, global reputation and cultural diversity. It is one of the most immigration friendly country. They offer diploma, undergraduate, post graduate and doctorate courses in the most relevant fields </p>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="images\uk.jpeg" alt="Country 2">
+                    <div class="country-content">
+                        <h3>United kingdom</h3>
+                        <p>The United Kingdom is a country that comprises England, Scotland, Wales and Northern Ireland. UK has been known worldwide for its universities and colleges like Oxford University, Cambridge University, etc and for the world-class education they provide. They are open to students from other nationalities and have a great cultural diversity. The UK universities mostly have 2 intakes for students.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="images\france.jpeg" alt="Country 3">
+                    <div class="country-content">
+                        <h3>France </h3>
+                        <p>France, in Western Europe, is known for its rich history, culture, and cuisine. Paris, the capital, is famous for landmarks like the Eiffel Tower and Louvre Museum. The country has diverse landscapes, from the Alps to coastal regions. French cuisine is renowned worldwide, and France is a top tourist destination.</p>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="images\germany.jpeg" alt="Country 4">
+                    <div class="country-content">
+                        <h3>Germany </h3>
+                        <p>Germany, in central Europe, is known for its rich history, culture, and strong economy. Major cities include Berlin, Hamburg, Munich, Frankfurt, and Cologne. Germany has a diverse landscape, including the North Sea coast, Bavarian Alps, and Black Forest. The country has a renowned education system, universal healthcare, and is famous for its engineering and automotive industries. German cuisine features sausages, pretzels, and beer. Overall, Germany is a popular tourist destination and a leader in innovation and industry.</p>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="images\ireland.jpeg" alt="Country 5">
+                    <div class="country-content">
+                        <h3>Ireland</h3>
+                        <p>Ireland is one of the most vibrant countries in Europe. It is ranked consistently in the world’s Top 20 countries for the quality of life, peace and hospitality. Ireland has worldwide reputation for high quality education as well. The world-class universities in Ireland offers over 5000 courses to choose from. They have an employability rate of over 80 percent. Ireland is the European hub to 1000+ leading multinational companies providing with lot of work options.</p>
+                    </div>
+                </div>
+                <div class="country">
+                    <img src="images\australia.jpeg" alt="Country 5">
+                    <div class="country-content">
+                        <h3>Australia</h3>
+                        <p>Australia offers high-quality education, diverse cultural experiences, and valuable work opportunities for students. The country's universities are renowned globally, and its multicultural environment enriches the learning experience. Students can work part-time while studying and benefit from post-study work visas. Australia's high standard of living, beautiful landscapes, and safe environment make it an attractive destination for students seeking quality education and a vibrant lifestyle.</p>
+                    </div>
+                </div>
+                <!-- Add more country boxes as needed -->
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <!-- Include your footer here -->
-
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var carousel = new bootstrap.Carousel(document.getElementById('study_abroad_carousel'));
-    
-            document.querySelector('.carousel-control-next').addEventListener('click', function() {
-                carousel.next();
-            });
-        });
-    </script>
-    
-    
+    <!-- Footer and scripts -->
+    <!-- ... -->
 </body>
 </html>
