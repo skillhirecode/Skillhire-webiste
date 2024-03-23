@@ -24,6 +24,9 @@
 <link rel="icon" href="images/fevicon.png" type="image/gif" />
 <!-- Scrollbar Custom CSS -->
 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 <!-- Tweaks for older IEs-->
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 <!-- fonts -->
@@ -46,9 +49,10 @@
         width: 100%;
         border: 1px solid white;
     }
+
     .contact_text {
         position: absolute;
-        top: 35%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -56,165 +60,364 @@
         text-align: center;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
-.whatsapp_button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.whatsapp_button img {
-    width: 60px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 50%;
+body {
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
 }
-</style>
-</head>
-<body>
-    
-<!--header section start -->
-<header>
-    <div class="container header-content">
-        <div class="header_logo">
-            <a class="logo" href="home.html"><img class="logo-img" src="images/logogif (1).gif"></a>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item  ">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                   
-                    <li class="nav-item active">
-                        <a class="nav-link" href="countries.html">Countries</a>
-                    </li>
-                   
-                
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="call_section">
-                    <ul>
-                        <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                        <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                        <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                        <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-                        
-                        <!-- <div class="donate_bt"><a href="#"><img src="/images/search-icon.png"></a></div> -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="bg"></div>
-    <div class="contact_text">Contact Us</div>
-</div>
-    
-</header>
-<!--header section end -->
-<!-- newsletter section start -->
-<div class="newsletter_section layout_padding">
-    <div class="container">
-        <div class="newsletter_main">
-            <h1 class="newsletter_taital">Get<br> Your free consuting </h1>
-            <div class="get_quote_bt"><a href="#">Get A Quote</a></div>
-        </div>
-        <p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
-    </div>
-</div>
-<!-- newsletter section end -->
-<!-- contact section start -->
-<div class="contact_section layout_padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 padding_left0">
-                <div class="mail_section">
-                    <div class="contact_img">
-                        <h1 class="contact_taital">Best Educations In World Here</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map_main"><img src="images/map-img.png"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- contact section end -->
-<!-- footer section start -->
-<div class="footer_section layout_padding">
-    <div class="container">
-        <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-        <input type="text" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
-        <div class="footer_section_2">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 margin_top">
-                    <div class="call_text"><a href="#"><img src="images/call-icon1.png"><span class="padding_left_15">Call Now +01 9876543210</span></a></div>
-                    <div class="call_text"><a href="#"><img src="images/mail-icon1.png"><span class="padding_left_15">demo@gmail.com</span></a></div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="information_main">
-                        <h4 class="information_text">Information</h4>
-                        <p class="many_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="information_main">
-                        <h4 class="information_text">Helpful Links</h4>
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="news.html">News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="information_main">
-                        <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- footer section end -->
-<!-- WhatsApp button -->
-<a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="whatsapp_button">
-    <img src="C:\Users\azmis\OneDrive\Desktop\Skillhire\images\wp icon.png.jpeg" alt="WhatsApp">
-</a>
-<!-- copyright section start -->
-<div class="copyright_section">
-    <div class="container">
-        <p class="copyright_text">© 2020 All Rights Reserved. <a href="https://html.design">Free html  Templates</a></p>
-    </div>
-</div>
-<!-- copyright section end -->
-<!-- Javascript files-->
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery-3.0.0.min.js"></script>
-<script src="js/plugin.js"></script>
-<!-- sidebar -->
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/custom.js"></script>
-<!-- javascript --> 
-<script src="js/owl.carousel.js"></script>
-<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-</body>
-</html>
 
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1); /* Adjust opacity for darker background */
+  }
+  
+
+section {
+  position: relative;
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-header h2 {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  color: #FFF;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .row {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-info-icon {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact-info-icon i {
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.contact-info-content {
+  margin-left: 20px;
+}
+
+.contact-info-content h4 {
+  color: #1da9c0;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.contact-info-content p {
+  color: pink;
+  font-weight: bold;
+  font-size:16px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  width: 45%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact-form h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+  width: 100%;
+  background: #00bcd4;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #00bcd4;
+  transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover
+{
+  background: #FFF;
+  color: #00bcd4;
+}
+
+@media (max-width: 991px)
+{
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    
+    .row {
+      flex-direction: column;
+    }
+    
+    .contact-info {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    
+    .contact-form {
+      width: 100%;
+    }
+  }
+      
+      .whatsapp_button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 9999;
+      }
+  
+      .whatsapp_button img {
+          width: 60px; /* Adjust size as needed */
+          height: auto;
+          border-radius: 50%;
+      }
+  </style>
+  </head>
+  <body>
+    
+      
+  <!--header section start -->
+  <header>
+      <div class="container header-content">
+          <div class="header_logo">
+              <a class="logo" href="home.html"><img class="logo-img" src="images/logogif (1).gif"></a>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item  ">
+                          <a class="nav-link" href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link" href="about.html">About</a>
+                      </li>
+                     
+                      <li class="nav-item active">
+                          <a class="nav-link" href="countries.html">Countries</a>
+                      </li>
+                     
+                  
+                      <li class="nav-item">
+                          <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+                  <div class="call_section">
+                      <ul>
+                          <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                          <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                          <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                          <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                          
+                          <!--```html -->
+                          <!-- <div class="donate_bt"><a href="#"><img src="/images/search-icon.png"></a></div> -->
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+      <div class="bg">
+          <div class="contact_text">Contact Us</div>
+      </div>
+  </header>
+  <!--header section end -->
+  <div class="container">
+      <div class="row">
+        
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Address</h4>
+              <p>4671 Office 2302 321-323 High Road,
+                Chadwell Heath,
+                <br/> Essex
+                RM6 6AX.
+                UK<br/></p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Phone</h4>
+              <p> 03300570974 </p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Email</h4>
+             <p>info@skillhireuk.co.uk</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form action="submit_form.php" method="POST">
+            <h2>Send Message</h2>
+            <div class="input-box">
+              <input type="text" required="true" name="">
+              <span>Full Name</span>
+            </div>
+            
+            <div class="input-box">
+              <input type="email" required="true" name="">
+              <span>Email</span>
+            </div>
+            
+            <div class="input-box">
+              <textarea required="true" name=""></textarea>
+              <span>Type your Message...</span>
+            </div>
+            
+            <div class="input-box">
+              <input type="submit" value="Send" name="">
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  </body>
+  </html>
+  <!-- contact section end -->
+  
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- javascript --> 
+  <script src="js/owl.carousel.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  
+  </body>
+  </html>
+  
