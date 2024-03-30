@@ -170,11 +170,11 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form  name="registrationForm" >
+          <form  name="registrationForm" onsubmit="sendToWhatsApp(event)">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
-              <label for="">Username</label>
+              <label for=""></label>
               <span>Username</span>
             </div>
             <div class="input-container">
@@ -192,9 +192,26 @@
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" id="registerButton" class="btn" />
+            <input type="submit" id="registerButton" class="btn" value="Send to WhatsApp"/>
           </form>
         </div>
+        
+<script>
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+    const form = document.forms.registrationForm;
+    const name = form.name.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const message = form.message.value;
+
+    const whatsappNumber = '918891769542';
+    const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    window.open(whatsappLink, '_blank');
+  }
+</script>
       </div>
     </div>
 
