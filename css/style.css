@@ -1199,7 +1199,12 @@ button {
 /* Responsive styles */
 @media (max-width: 768px) {
   .slide {
-    height: 300px; /* Adjust the height for tablets */
+    background-image: url('./images/banner/longbanner.jpg');
+    height: 200px; /* Adjust the height for tablets */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center the content */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
   }
 }
 
